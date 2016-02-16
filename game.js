@@ -30,6 +30,7 @@
     startGame : function(n) {
       RPS.showMenu(RPS.menus.length - 1);
       if (!RPS.started) {
+        RPS.started = true;
         n.innerHTML = 'Resume';
         window.setTimeout(function() {
           RPS.write('Welcome !', 'Choose your weapon in the top left hand corner ; Rock, Paper, or Scissors. When you\'re ready click the "GO" button to begin an epic battle !', 10000);
