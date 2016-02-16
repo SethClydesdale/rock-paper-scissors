@@ -1,6 +1,12 @@
 # rock-paper-scissors
 
-This is a modern take on the classic hand game. If you enjoy playing this game with humans you should have more than enough fun playing with the computer! You can find a working demo here : http://opensource.olympe.in/rock-paper-scissors/
+This is a take on the classic hand game, created using modern web technologies. If you enjoy playing this game with humans you should have more than enough fun playing with the computer!
+
+# Demo
+
+You can find a working demo here : http://opensource.olympe.in/rock-paper-scissors/
+
+![](http://i68.servimg.com/u/f68/19/06/98/92/demo10.gif)
 
 # Playing
 
