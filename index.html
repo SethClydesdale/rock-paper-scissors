@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+  </head>
+  
+  <body>
+    <div id="mainMenu" class="menu">
+      <h1 class="menuTitle">Rock-Paper-Scissors</h1>
+      <div class="menuContent">
+        <div class="button" onclick="RPS.startGame();">Start game</div>
+        <div class="button" onclick="RPS.showMenu(1);">How to play</div>
+        <div class="button" onclick="RPS.showMenu(2);">Credits</div>
+      </div>
+    </div>
+    
+    <div id="rules" class="menu" style="display:none;">
+      <h2 class="menuTitle">How to play</h1>
+      <div class="menuContent">
+        <p>Rock-paper-scissors or "Roshambo" is a game that can be played with two or more players. In this version you'll be facing JavaScript itself. Can you defeat this almighty object-oriented programming language ? The rules and gameplay will be detailed below.
+        <br/><br/>
+        You can choose from three hand gestures ; Rock, Paper, or Scissors. Rock beats Scissors, Scissors beats Paper, and Paper beats Rock. If an equal gesture is drawn it will result in a tie. Study the diagram below long and hard to become a Roshambo master.
+        <br/><br/>
+        <div style="text-align:center;">
+          <a href="diagram.png" target="_blank"><img src="diagram.png" style="max-width:90%;"/></a>
+          <br/>
+          Diagram courtesy of <a href="https://en.wikipedia.org/wiki/Rock-paper-scissors" target="_blank">Wikipedia</a>.
+        </div>
+        <br/>
+        
+        Below is an overview of the game screen with a brief explanation of the User Interface. You choose your hand gesture or "weapon" with the three buttons in the top left hand corner. Once you made your choice click the "GO" button to begin the battle with the CPU. Note that you can still change your choice after hitting the "GO" button. Make use of this if you're unsure of the choice you made !! 
+        <br/><br/>
+        <div style="text-align:center;">
+          <a href="overview.png" target="_blank"><img src="overview.png" style="max-width:90%;"/></a>
+          <br/>
+          Click the image to see the full size.
+        </div>
+        <br/>
+        You will be notified of the results at the end of the round. If there's a winner, one point will be added to their score count. Now get out there and beat that CPU !
+        </p>
+        <div class="button" onclick="RPS.showMenu(0);">Back to main menu</div>
+      </div>
+    </div>
+    
+    <div id="credits" class="menu" style="display:none;">
+      <h2 class="menuTitle">Credits</h1>
+      <div class="menuContent">
+        <h3 class="subTitle">Developers</h3>
+        <ul>
+          <li><a href="https://twitter.com/sethc1995" target="_blank">Seth Clydesdale</a></li>
+        </ul>
+        
+        <h3 class="subTitle">Special Thanks</h3>
+        <ul>
+          <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a> for their awesome icons.</li>
+          <li><a href="https://www.maxcdn.com/" target="_blank">MaxCDN</a> for delivering the FontAwesome icon set.</li>
+          <li><a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a> for their information and history on the game.</li>
+        </ul>
+        <br/>
+        <div class="button" onclick="RPS.showMenu(0);">Back to main menu</div>
+      </div>
+    </div>
+    
+    
+    <div id="gameBoard" style="display:none;">
+      <div id="userChoice">
+        <div class="choice chosen" onclick="RPS.switchChoice(0);" title="Rock"><i class="fa fa-hand-rock-o"></i></div>
+        <div class="choice" onclick="RPS.switchChoice(1);" title="Paper"><i class="fa fa-hand-paper-o"></i></div>
+        <div class="choice" onclick="RPS.switchChoice(2);" title="Scissors"><i class="fa fa-hand-scissors-o"></i></div>
+        <div id="go" class="choice" onclick="RPS.shuffle();" title="Shoot!">GO</div>
+        <div class="choice" onclick="RPS.showMenu(0);" title="Back to menus" style="float:right;"><i class="fa fa-navicon"></i></div>
+        <div id="messageDock"><div id="messageBox" class="out"></div></div>
+      </div>
+      
+      <div id="scoreDock">
+        <div id="scoreBox">
+          <span id="userScore">0</span> - <span id="cpuScore">0</span>
+        </div>
+      </div>
+      
+      <div id="userHand"><i class="fa fa-hand-rock-o"></i></div>
+      <div id="cpuHand"><i class="fa fa-hand-rock-o"></i></div>
+    </div>
+    
+    <script type="text/javascript" src="game.js"></script>
+  </body>
+</html>

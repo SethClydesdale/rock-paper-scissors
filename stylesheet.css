@@ -1,0 +1,230 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  color:#333;
+  font-size:12px;
+  font-family:Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background:#DDD;
+}
+
+a {
+  color:#3C9;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+ul, ol {
+  margin:20px auto;
+}
+
+li {
+  font-size:15px;
+  margin-left:10%;
+}
+
+.menu {
+  width:40%;
+  min-width:300px;
+  margin:10px auto;
+  background:#FFF;
+  border:1px solid #3C9;
+}
+
+.menuTitle {
+  color:#FFF;
+  background:#3C9;
+  font-size:20px;
+  font-weight:bold;
+  padding:10px;
+}
+
+.subTitle {
+  font-size:18px;
+  font-weight:bold;
+  text-align:center;
+}
+
+.menuContent {
+  font-size:13px;
+  padding:3px;
+}
+
+.button {
+  color:#3C9;
+  background:transparent;
+  font-size:20px;
+  text-align:center;
+  border:1px solid #3C9;
+  width:50%;
+  margin:20px auto;
+  padding:10px;
+  cursor:pointer;
+}
+
+.button:hover {
+  color:#FFF;
+  background:#3C9;
+}
+
+/* GAME BOARD */
+#userChoice {
+  position:fixed;
+  top:10px;
+  left:10px;
+  right:10px;
+}
+
+.fa-hand-rock-o, .fa-hand-paper-o {
+  transform:rotate(90deg);
+}
+
+.fa-hand-scissors-o {
+  transform:rotateY(180deg);
+}
+
+.choice {
+  color:#FFF;
+  background:#3C9;
+  border:2px solid #3C9;
+  font-size:25px;
+  height:50px;
+  width:50px;
+  border-radius:50px;
+  line-height:50px;
+  text-align:center;
+  display:inline-block;
+  margin:6px;
+  cursor:pointer;
+  transition:250ms;
+}
+
+.choice:hover, .choice.chosen {
+  color:#3C9;
+  background:#FFF;
+  transform:scale(1.2);
+}
+
+.choice.inactive {
+  color:#FFF;
+  background:#3C9;
+  transform:none;
+  cursor:default;
+  opacity:0.3;
+}
+
+#userHand {
+  color:#3C9;
+  height:100px;
+  width:100px;
+  font-size:100px;
+  position:fixed;
+  top:50%;
+  left:25%;
+  margin-top:-50px;
+  margin-left:-50px;
+}
+
+#cpuHand {
+  color:#3C9;
+  height:100px;
+  width:100px;
+  font-size:100px;
+  position:fixed;
+  top:50%;
+  right:25%;
+  margin-top:-50px;
+  margin-right:-50px;
+}
+
+#cpuHand .fa-hand-rock-o, #cpuHand .fa-hand-paper-o {
+  transform:rotate(-90deg) rotateY(-180deg);
+}
+
+#cpuHand .fa-hand-scissors-o {
+  transform:none;
+}
+
+#scoreDock {
+  color:#3C9;
+  font-size:64px;
+  text-align:center;
+  position:fixed;
+  bottom:10px;
+  left:10px;
+  right:10px;
+}
+
+#scoreBox {
+  background:#FFF;
+  border:2px solid #3C9;
+  border-radius:10px;
+  display:inline-block;
+  padding:0px 30px;
+}
+
+#messageDock {
+  color:#3C9;
+  font-size:16px;
+  text-align:center;
+  margin-top:10px;
+}
+
+#messageBox {
+  background:#FFF;
+  width:30%;
+  min-width:300px;
+  border:1px solid #3C9;
+  display:inline-block;
+  transform:scale(1);
+  opacity:1;
+  transition:300ms;
+}
+
+#messageBox.hideMenu {
+  background:none;
+  border:none;
+}
+
+#messageBox h3 {
+  font-size:20px;
+  padding:3px;
+}
+
+#messageBox.hideMenu h3 {
+  color:#3C9;
+  font-size:32px;
+  background:none;
+}
+
+#messageBox p {
+  padding:6px;
+}
+
+#messageBox.out {
+  transform:scale(0);
+  opacity:0;
+  visibility:hidden;
+}
+
+@-webkit-keyframes shuffle {
+  0% { top:40% }
+  50% { top:50% }
+  100% { top:40% }
+}
+
+@keyframes shuffle {
+  0% { top:40% }
+  50% { top:50% }
+  100% { top:40% }
+}
+
+.shuffle {
+  -webkit-animation:shuffle infinite 1000ms;
+  animation:shuffle infinite 1000ms;
+}
