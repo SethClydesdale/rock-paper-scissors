@@ -4,7 +4,7 @@ This is a take on the classic hand game, created using modern web technologies. 
 
 # Demo
 
-You can find a working demo here : http://opensource.olympe.in/rock-paper-scissors/
+You can find a working demo here : http://sethclydesdale.github.io/rock-paper-scissors/index.html
 
 ![](http://i68.servimg.com/u/f68/19/06/98/92/demo10.gif)
 
@@ -12,4 +12,4 @@ You can find a working demo here : http://opensource.olympe.in/rock-paper-scisso
 
 Playing the game is simple. Once you click "start game" all you need to do is choose your weapon in the top left hand corner and click "GO" to commence the battle. See the overview below for more information.
 
-![](http://opensource.olympe.in/rock-paper-scissors/overview.png)
+![](http://sethclydesdale.github.io/rock-paper-scissors/overview.png)
