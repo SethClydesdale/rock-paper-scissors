@@ -4,7 +4,7 @@ This is a take on the classic hand game, created using modern web technologies. 
 
 # Demo
 
-You can find a working demo here : http://sethclydesdale.github.io/rock-paper-scissors/index.html
+You can find a working demo here : http://sethclydesdale.github.io/rock-paper-scissors/
 
 ![](http://i68.servimg.com/u/f68/19/06/98/92/demo10.gif)
 
