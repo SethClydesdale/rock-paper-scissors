@@ -219,8 +219,6 @@ li {
   margin-bottom:20px;
 }
 
-.ad-container ins { background:red; }
-
 @-webkit-keyframes shuffle {
   0% { top:40% }
   50% { top:50% }
